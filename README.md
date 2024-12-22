@@ -347,3 +347,42 @@ def hello():
   - **DELETE**: Removing data.
 
 > We'll dive into these methods in future lessons.
+
+
+## Defining a GET Method Endpoint
+
+### **Specifying the Method in Flask**
+- To explicitly define the HTTP method for a route, use the `methods` parameter in the `@app.route` decorator.
+
+---
+
+### **Example: GET Method Endpoint**
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/greet', methods=['GET'])
+def get_endpoint():
+    # Return a simple string response
+    return "Hello from the GET endpoint!"
+```
+### **Explanation**
+
+- **`@app.route('/greet', methods=['GET'])`**:
+  - Maps the `/greet` URL to the `get_endpoint` function.
+  - Restricts the route to handle only GET requests.
+
+- **`get_endpoint()`**:
+  - A function that:
+    - Handles the incoming GET request.
+    - Returns `"Hello from the GET endpoint!"` as the response.
+
+---
+
+### **Behavior**
+
+- **Scenario**: A GET request is sent to `http://localhost:5000/greet`.
+  - Flask will:
+    1. Call the `get_endpoint` function.
+    2. Respond with the message `"Hello from the GET endpoint!"`.
