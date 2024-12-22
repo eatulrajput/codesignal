@@ -309,3 +309,41 @@ def hello():
 
 - **Expected Response**:  
   `"Hello, World!"`.
+
+## HTTP Methods in Flask
+
+### **Supported HTTP Methods**
+- Flask supports multiple HTTP methods:
+  - **GET** (default)
+  - **POST**
+  - **PUT**
+  - **DELETE**
+- These methods specify the type of action to perform for a given URL.
+
+---
+
+## Use Cases of the GET Method
+
+### **What is the GET Method?**
+- One of the most common HTTP methods used in web development.
+- Primarily used for retrieving data from the server.
+
+### **Real-World Examples**
+1. **Viewing a Webpage**:
+   - When you type a URL in your browser, it sends a GET request to fetch and display the webpage.
+2. **Fetching Data via APIs**:
+   - Retrieving a list of users.
+   - Fetching details of a specific item.
+
+---
+
+### **Default Behavior in Flask**
+- If no method is specified for a route, Flask defaults to the GET method.
+
+### **Other HTTP Methods**
+- While GET is used for retrieving data, other methods like POST, PUT, and DELETE are used for actions like:
+  - **POST**: Creating new data.
+  - **PUT**: Updating existing data.
+  - **DELETE**: Removing data.
+
+> We'll dive into these methods in future lessons.
