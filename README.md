@@ -186,3 +186,51 @@ When using Gunicorn, there's no need for the `if __name__ == "__main__": app.run
   - **`8080`**: Specifies the port number to listen on.
 
 This configuration allows Gunicorn to handle requests from any IP address and on a custom port, ensuring flexibility and accessibility for your Flask application.
+
+
+## Other Useful Gunicorn Options
+
+Gunicorn provides several options to customize its behavior for different server needs:
+
+### 1. **Worker Processes**  
+- **Purpose**: Adjust the number of worker processes to handle concurrent requests.  
+- **Example**:  
+  ```bash  
+  gunicorn -w 4 filename:app  
+  ```
+`-w 4`: Specifies 4 worker processes.
+
+## 2. Timeouts
+
+- **Purpose**:  
+  Set custom timeouts for requests to avoid hanging processes.
+
+- **Example**:  
+  ```bash  
+  gunicorn --timeout 30 filename:app  
+  ```
+`--timeout 30`: Sets a timeout of 30 seconds for each request.
+
+## 3. Logging
+
+- **Purpose**:  
+  Configure detailed logging to monitor and debug application behavior.
+
+- **Example**:  
+  ```bash  
+  gunicorn --log-level info filename:app  
+  ```
+
+`--log-level info`: Enables detailed logging at the INFO level.
+
+## 4. Daemon Mode
+
+- **Purpose**:  
+  Run Gunicorn as a background service using daemon mode.
+
+- **Example**:  
+  ```bash  
+  gunicorn --daemon filename:app  
+  ```
+
+`--daemon`: Starts Gunicorn in the background as a service.
