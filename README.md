@@ -423,3 +423,20 @@ def get_endpoint():
   `"Hello! You have reached the GET endpoint!"`
 - Status Code:  
   `200 OK` — Indicates that the request was successfully processed.
+
+
+## Summary and Next Steps
+
+### **Lesson Recap**
+- Learned how to create a **simple GET endpoint** in Flask.
+- Introduced the concept of **routing**:
+  - Defined routes using the `@app.route` decorator.
+- Revisited setting up a basic Flask application.
+- Created a **GET endpoint** that:
+  - Returns a greeting message.
+  - Demonstrates the use of the GET method.
+- Discussed how to **access the endpoint** using a browser or HTTP client.
+- Explored **common use cases for the GET method**, such as retrieving data or loading web pages.
+
+---
+
