@@ -261,3 +261,51 @@ Gunicorn provides several options to customize its behavior for different server
     - Easy management of application logic.
     - Expansion of web applications with multiple endpoints.
 
+## Introducing Routes and Decorators
+
+### **What is a Route in Flask?**
+- A route is a URL pattern that the web application responds to.
+- In Flask, routes are defined using decorators like `@app.route`.
+
+---
+
+### **Example: Defining a Route**
+```python
+# Define a route with a decorator
+@app.route('/hello')
+def hello():
+    # Return a simple string response
+    return "Hello, World!"
+```
+
+## Explanation
+
+### **`@app.route('/hello')`**
+- **What it does**:
+  - A decorator that maps the `/hello` URL to the `hello` function.
+  - When `/hello` is accessed, Flask executes the `hello` function.
+
+### **`hello()`**
+- A Python function that:
+  - Handles the incoming web request.
+  - Returns `"Hello, World!"` as the response.
+
+---
+
+## What is a Decorator in Python?
+
+- **Definition**:  
+  A decorator is a special type of function that modifies the behavior of another function.
+
+- **In this Context**:
+  - `@app.route` modifies `hello()` so it reacts to web requests made to the `/hello` URL.
+
+---
+
+## Testing the Route
+
+- **URL**:  
+  `http://localhost:5000/hello` (assuming the app is running on `localhost:5000`).
+
+- **Expected Response**:  
+  `"Hello, World!"`.
