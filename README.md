@@ -386,3 +386,40 @@ def get_endpoint():
   - Flask will:
     1. Call the `get_endpoint` function.
     2. Respond with the message `"Hello from the GET endpoint!"`.
+
+
+## Accessing an Endpoint
+
+### **Verification Process**
+- Use a web browser or any HTTP client tool (e.g., Postman, curl) to access the endpoint.
+
+---
+
+### **URL**
+- Navigate to:  
+  `http://your_ip_and_port/greet`
+
+---
+
+### **Expected Response**
+- You should see the following message:  
+  `"Hello from the GET endpoint!"`
+
+## Accessing an Endpoint
+
+### **Verification Process**
+- Use a web browser or any HTTP client tool (e.g., Postman, curl) to access the endpoint.
+
+---
+
+### **URL**
+- Navigate to:  
+  `http://your_ip_and_port/greet`
+
+---
+
+### **Expected Response**
+- Response Message:  
+  `"Hello! You have reached the GET endpoint!"`
+- Status Code:  
+  `200 OK` — Indicates that the request was successfully processed.
