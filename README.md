@@ -234,3 +234,30 @@ Gunicorn provides several options to customize its behavior for different server
   ```
 
 `--daemon`: Starts Gunicorn in the background as a service.
+
+# Creating a Simple GET Endpoint in Flask
+
+## Introduction
+- **Objective**: Learn to create a simple GET endpoint in Flask.
+- **Context**: Builds upon previous lessons on setting up and running a Flask application.
+- **Focus**: Understand routing and its role in web development.
+
+---
+
+## What is Routing?
+
+- **Definition**:  
+  Routing is the mechanism that directs web traffic to different parts of a web application.
+
+- **Example in Real Life**:  
+  - URL: `https://codesignal.com/learn`
+    - `https://codesignal.com`: Domain or root of the website.
+    - `/learn`: Path determining the content or data to fetch and render.
+  - The routing mechanism identifies the path (`/learn`) and directs the request to the corresponding functionality.
+
+- **Routing in Flask**:  
+  - Maps URLs to specific functions in your code.
+  - Enables:
+    - Easy management of application logic.
+    - Expansion of web applications with multiple endpoints.
+
