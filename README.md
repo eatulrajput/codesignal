@@ -47,7 +47,7 @@
 
 - **Installation:**  
   Install Flask locally using the following command:
-  ```bash
+  ```python
   pip install flask
   ```
 
